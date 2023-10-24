@@ -2,9 +2,9 @@ package ba.unsa.etf.rpr;
 
 public class Racun{
     public static int factBroja(int n){
-       /* if (n<0)
-           throw IllegalArgumentException("Nije dobar argument");
-        else*/ if(n==0)
+        if (n<0)
+           throw new IllegalArgumentException ("Nije dobar argument");
+        else if(n==0)
             return 1;
         else
         {
