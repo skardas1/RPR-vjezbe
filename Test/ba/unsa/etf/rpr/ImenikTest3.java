@@ -2,7 +2,13 @@ package ba.unsa.etf.rpr;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-//import org.mockito.Mockito;
+import org.mockito.Mockito;
+import org.junit.jupiter.api.function.Executable;
+
+import org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.Assert.assertEquals;
+
 
 class ImenikTest3 {
 
@@ -18,12 +24,12 @@ class ImenikTest3 {
 
     @Test
     public void testMockExternal()
-    {/*
-        //Imenik i=Mockito.mock(Imenik.class);
-        //Mockito.when(i.dajBroj("Sara").thenReturn("Nema nista"));
+    {
+        Imenik i=Mockito.mock(Imenik.class);
+        Mockito.when(i.dajBroj("Sara"));
 
         String test=i.dajBroj("Sara");
-        assertEquals(test,"Nema nista");*/
+        assertEquals(test,"Nema nista");
     }
 
 }
