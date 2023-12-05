@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="395.0" prefWidth="414.0" spacing="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CalculatorController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+       <GridPane hgap="5" prefHeight="345.0" prefWidth="243.0" vgap="5">
+
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+
+        </rowConstraints>
+        <TextField fx:id="displej" style="-fx-background-color: lightGreen;" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS" />
+           <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="Infinity" onAction="#handleOperatorButtonClick" text="\%" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+           <Button maxWidth="Infinity" onAction="#handleOperatorButtonClick" text="/" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+           <Button maxWidth="Infinity" onAction="#handleOperatorButtonClick" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+           <Button maxWidth="Infinity" onAction="#handleOperatorButtonClick" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="8" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="4" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="1" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="2" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+           <Button layoutY="123.0" maxHeight="1.7976931348623157E308" maxWidth="Infinity" onAction="#handleOperatorButtonClick" text="+" GridPane.columnIndex="3" GridPane.fillWidth="true" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+
+           <Button maxWidth="Infinity" onAction="#handleDigitButtonClick" text="0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.fillWidth="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+           <Button maxHeight="-Infinity" maxWidth="Infinity" onAction="#handleDigitButtonClick" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+           <Button layoutY="123.0" maxHeight="1.7976931348623157E308" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleEqualsButtonClick" style="-fx-background-color: pink;" text="=" GridPane.columnIndex="3" GridPane.fillWidth="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.rowSpan="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <GridPane.margin>
+               <Insets bottom="15.0" />
+            </GridPane.margin></Button>
+
+
+
+
+
+
+
+       </GridPane>
+   </children>
+</VBox>
