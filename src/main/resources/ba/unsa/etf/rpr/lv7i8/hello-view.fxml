@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="411.0" spacing="20.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.lv7i8.KorisniciController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        
+    </padding>
+   <children>
+
+       <GridPane hgap="5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="371.0" vgap="5" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="106.59999237060546" minWidth="10.0" prefWidth="81.8" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="109.6" minWidth="10.0" prefWidth="83.60000000000001" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="87.39999999999998" minWidth="0.0" prefWidth="82.60000000000002" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="90.39999999999998" minWidth="0.0" prefWidth="47.60000000000002" />
+
+
+
+
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label text="Ime:" textFill="#fcf8f8" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+            <Label text="Prezime:" textFill="#f4f2f2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+            <Label text="E-mail:" textFill="#f2eeee" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+            <Label text="Korisničko ime:" textFill="#f4eeee" textOverrun="CLIP" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+            <Label text="Lozinka:" textFill="#f2ecec" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+             <TextField fx:id="korisnicko_ime" promptText="Unesite username:" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+             <TextField fx:id="ime" promptText="Unesite ime:" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+             <TextField fx:id="prezime" minHeight="-Infinity" minWidth="-Infinity" promptText="Unesite prezime:" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+             <TextField fx:id="email" promptText="Unesite E-mail:" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+
+            <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDodajButton" style="-fx-border-color: white; -fx-background-color: gray;" text="Dodaj" textFill="#1a1b1a" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font></Button>
+            <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#handleKrajButton" style="-fx-background-color: gray; -fx-border-color: white;" text="Kraj" textFill="#1c1d1e" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font></Button>
+            <PasswordField fx:id="lozinka" promptText="Unesite password:" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></PasswordField>
+             <ListView fx:id="lista" maxHeight="Infinity" maxWidth="Infinity"  prefHeight="151.0" prefWidth="95.0" style="-fx-border-color: black;" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="5" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
