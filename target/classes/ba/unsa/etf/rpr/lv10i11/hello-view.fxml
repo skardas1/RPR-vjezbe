@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" minHeight="-Infinity" prefHeight="336.0" prefWidth="422.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.lv10i11.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="307.8" minWidth="0.0" prefWidth="286.2" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="96.19999999999999" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableViewGradovi" prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="5">
+              <columns>
+                <TableColumn fx:id="colGradId" prefWidth="45.20001029968262" text="ID" />
+                <TableColumn fx:id="colNazivGrad" prefWidth="60.60003662109375" text="Naziv" />
+                  <TableColumn fx:id="colGradStanovnika" prefWidth="92.00000762939453" text="Stanovnika" />
+                  <TableColumn fx:id="colGradDrzava" prefWidth="104.800048828125" text="Drzava" />
+
+              </columns>
+            </TableView>
+            <Button fx:id="btnDodajGrad" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDodajIliIzmijeniGradButton" text="Dodaj grad" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button fx:id="btnDodajDrzavu" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDodajDrzavuButton" text="Dodaj drzavu" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnIzmijeniGrad" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDodajIliIzmijeniGradButton" text="Izmijeni grad" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#handleDeleteButtonClick" text="Obriši grad" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
